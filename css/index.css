@@ -1,1 +1,225 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
+/*variables and mix-ins*/
+.fontRobo {
+  font-family: "Roboto Condensed", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.top {
+  height: 300px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.top .top_pic {
+  height: 100px;
+  width: 100px;
+}
+@media screen and (max-width: 500px) {
+  .top .top_pic {
+    display: none;
+  }
+  .top .top_pic .top_img {
+    width: 100%;
+  }
+}
+.top .name h1 {
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.top .name h2 {
+  color: red;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.top .intro {
+  color: blue;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.skills .tec {
+  display: flex;
+  justify-content: space-around;
+}
+.lang {
+  margin: 10%;
+}
+.lang .fore {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.lang .fore div {
+  width: 45%;
+  border: 1px solid blue;
+}
+.education {
+  margin: 10%;
+}
+.education .ed {
+  display: flex;
+  flex-wrap: wrap;
+}
+.education .ed div {
+  width: 50%;
+  border: 1px solid blue;
+}
+.work {
+  margin: 10%;
+}
+.work .company {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work .company div {
+  width: 30%;
+  border: 1px solid blue;
+}
+footer {
+  border-top: 1px solid black;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
