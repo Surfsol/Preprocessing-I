@@ -132,10 +132,110 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+/*variables and mix-ins*/
+@colorvar: red;
+.fontRobo {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.bordervar() {
+  border: 1px solid blue;
+}
+
+.flex() {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 html,
 body {
   height: 100%;
-  background: red;
+}
+
+nav {
+}
+
+.top {
+  height: 300px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  .top_pic {
+    height: 100px;
+    width: 100px;
+    @media screen and (max-width: 500px) {
+      display: none;
+      .top_img {
+        width: 100%;
+      }
+    }
+  }
+  .name {
+    h1 {
+      color: black;
+      .fontRobo;
+    }
+    h2 {
+      color: @colorvar;
+      font-family: "Open Sans Condensed", sans-serif;
+    }
+  }
+  .intro {
+    color: blue;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+} //end top
+
+.skills {
+  .tec {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.lang {
+  margin: 10%;
+  .fore {
+    .flex();
+    width: 30%;
+    div {
+      width: 45%;
+      .bordervar();
+    }
+  }
+}
+
+.education {
+  margin: 10%;
+  .ed {
+    .flex();
+    div {
+      width: 50%;
+      .bordervar();
+    }
+  }
+}
+
+.work {
+  margin: 10%;
+  .company {
+    .flex();
+    div {
+      width: 30%;
+      .bordervar();
+    }
+  } //end company
+} // end work
+
+footer {
+  border-top: 1px solid black;
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
